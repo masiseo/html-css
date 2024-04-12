@@ -1,0 +1,297 @@
+
+*{margin: 0; padding: 0;}
+
+*{
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #D4AF37;
+}
+
+body{width: 960px;
+	margin: 0px auto;
+	background-color: #E6E6E6;
+}
+
+
+pre{   /*#introduce*/
+	font-size: 20px;
+}
+
+footer{
+	background-color: skyblue;
+	text-align: center;
+	color: black;
+}
+
+#main-img{display: block;
+	margin: auto;
+}
+
+section{background-color: rgba(251, 239, 251, 0.8);
+	height: 60px;
+	line-height: 60px;
+	z-index: 1;
+    
+}
+#main-title{
+	position: absolute;
+	display: inline;
+	left: 272px;
+	top: 205px;
+    color: lightpink;
+}
+.tab-title{
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	text-align: center;
+	width: 960px;
+}
+
+.tab-title >label{
+	display: inline-block;
+	text-align: center;
+	width: 80px;
+	margin: 0px 65px;
+	font-size: 20px;
+	height: 40px;
+}
+#information >label{
+	width: 800px;
+	margin-left: 120px;
+	font-size: 20px;
+}
+
+.first-floor{
+	position: relative;
+}
+#page-wrapper{
+	background-color: white;
+}
+
+#me,#friend,#show,#info{display: none;}
+#ready,#route,#traffic,#caution{display: none;}
+
+/*#q1,#q1-2,#q2,#q2-2{display: none;}                              
+
+.quest:has(#q1:checked) ~ .quest:nth-of-type(1),
+.quest:has(#q1-2:checked) ~ .quest:nth-of-type(2){
+	display: block;
+}*/
+
+.tab-item {
+    display: none;
+    height: auto;
+    position: relative;
+        padding-bottom: 500px;
+}
+.secondtab-item {
+    display: none;
+    position: relative;
+    width: 960px;
+    top: 300px;
+    margin-bottom: 100px;
+
+}
+
+#me:checked ~ .tab-item:nth-of-type(1),
+#friend:checked ~ .tab-item:nth-of-type(2),
+#show:checked ~ .tab-item:nth-of-type(3),
+#info:checked ~ .tab-item:nth-of-type(4) {
+    display: block;
+}
+
+#ready:checked ~ .secondtab-item:nth-of-type(1),
+#route:checked ~ .secondtab-item:nth-of-type(2),
+#traffic:checked ~ .secondtab-item:nth-of-type(3),
+#caution:checked ~ .secondtab-item:nth-of-type(4) {
+    display: block;
+}
+
+
+#me:checked ~ section.tab-title > label:nth-of-type(1),
+input:nth-of-type(2):checked ~ section.tab-title > label:nth-of-type(2),
+input:nth-of-type(3):checked ~ section.tab-title > label:nth-of-type(3),
+input:nth-of-type(4):checked ~ section.tab-title > label:nth-of-type(4){
+	border-bottom: 3px solid black;
+}
+#ready:checked ~ section> label:nth-of-type(1),
+input:nth-of-type(2):checked ~ section > label:nth-of-type(2),
+input:nth-of-type(3):checked ~ section > label:nth-of-type(3),
+input:nth-of-type(4):checked ~ section > label:nth-of-type(4){
+	border-bottom: 3px solid black;
+}
+
+#first-tab{						/*1번째*/
+	position: relative;
+	top: 280px;
+	left: 190px;
+	height: 400px;
+	width: 700px;
+}
+#first-tab h1{
+	margin-left: 350px;
+}
+
+
+#sub-title1{
+	position: absolute;
+	top: 150px;
+	left: 308px;
+	font-size: 45px;
+}
+
+#sub-title2{			/*2번째*/
+	position: absolute;
+	top: 150px;
+	left: 285px;
+	font-size: 45px;
+}
+#bf h1{
+	margin-left: 400px;
+}
+
+#bf
+{
+	position: relative;
+	height: 320px;
+	top: 300px;
+	left: 150px;
+}
+#interview{
+	position: relative;
+	height: 320px;
+	top: 400px;
+	left: 150px;
+}
+#interview >h2, #interview > h3{
+	margin-left: 400px;
+}
+#img2-1{
+	margin-right: 50px;
+}
+#question{
+	position: relative;
+	height: 320px;
+	top: 500px;
+	left: 150px;
+	margin-bottom: 100px;
+}
+
+#img3{						/*3번째*/
+	position: relative;
+	top: 200px;
+	left: 305px;
+}
+
+#sub-title3{
+	position: relative;
+	top: 150px;
+	left: 285px;
+	font-size: 45px;
+}
+#reason{
+	position: relative;
+	height: 550px;
+	top: 300px;
+	text-align: center;
+}
+#reason >h2{
+	margin-top: 50px;
+}
+#reason li{
+	list-style: none;
+}
+
+#introduce{
+	position: relative;
+	height: 140px;
+	top: 250px;
+	left: 0px;
+
+}
+#img4{                      /*4번째*/
+	position: absolute;
+	top: 25%;
+	left: 15%;
+}
+
+#tab-item-text4{
+	position: absolute;
+	top: 25%;
+	left: 55%;
+	font-size: 30px;
+}
+#sub-title4{
+	position: absolute;
+	top: 200px;
+	left: 285px;
+	font-size: 45px;
+}
+.secondtab-item >h3,
+.secondtab-item >h2{
+	margin-left: 100px;
+}
+.secondtab-item >div{
+	display: block;
+	margin: 30px 0 30px 100px;
+	height: 193px;
+
+}
+.route-tab > img{
+	margin-right: 30px;
+}
+.secondtab-item img{
+	margin-right: 30px;
+}
+#caution_title{
+	display: inline;
+	line-height: 31.75px;
+}
+#caution_img{
+	margin: 0;
+	position: relative;
+	top: 5px;
+}
+#caution_tab{
+	height: 32px;
+}
+
+.quest{
+	width: 600px;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 15px;
+	position: absolute;
+/*	display: none;*/
+	overflow: scroll;
+
+}
+
+
+
+
+.quest > div{
+	
+	text-align: center;
+	width: 600px;
+	left: 85px;
+	height: auto;
+	top: 110px;
+	margin:50px 0;
+}
+/*.left_q:hover{
+	background-color: lightpink;
+}
+.right_q{
+	right: 0;
+}
+.right_q:hover{
+	background-color: lightpink;
+
+}*/
+/*.quest > label{
+	position: absolute;
+	top: 130px;
+}*/
